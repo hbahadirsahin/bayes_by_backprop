@@ -1,7 +1,7 @@
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
-from CS558Assignment3.cifar_input import load_dataset
+from cifar_input import load_dataset
 
 
 def weight_variable(shape):
