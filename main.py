@@ -42,7 +42,7 @@ constant = -0.5 * np.log(2 * np.pi)
 
 
 def log_gaussian(x, mu, sigma):
-    return constant - np.log(np.abs(sigma)) - (x - mu) ** 2 / (2 * sigma ** 2)
+    return constant - tf.log(tf.abs(sigma)) - (x - mu) ** 2 / (2 * sigma ** 2)
 
 
 def log_gaussian_logsigma(x, mu, logsigma):
